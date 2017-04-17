@@ -1,4 +1,4 @@
-# Sketch Query-selection
+# Sketch Query Selection
 Filter selection layers by type.
 Groups, Shapes, Text and Image layers.
 
