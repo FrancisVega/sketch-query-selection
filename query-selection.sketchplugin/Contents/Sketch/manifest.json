@@ -10,9 +10,9 @@
     "bundleVersion": 1,
     "commands": [
         {
-            "description": "Filter by Shape Layers",
-            "icon":"icons/data-icon.png",
-            "name": "Filter Shape Layers",
+            "name": "Filter Shapes",
+            "description": "Filter layer selection by Shapes",
+            "icon":"icons/shape-icon.png",
             "identifier": "filtershapelayers",
             "handlers" : {
                 "run" : "filterShapes"
@@ -20,9 +20,9 @@
             "script": "query-selection.js"
         },
         {
-            "description": "Filter by Image Layers",
-            "icon":"icons/data-icon.png",
-            "name": "Filter Images Layers",
+            "name": "Filter Images",
+            "description": "Filter layer selection by Images",
+            "icon":"icons/image-icon.png",
             "identifier": "filterimagelayers",
             "handlers" : {
                 "run" : "filterImages"
@@ -30,9 +30,9 @@
             "script": "query-selection.js"
         },
         {
-            "description": "Filter by Text Layers",
-            "icon":"icons/data-icon.png",
-            "name": "Filter Texts Layers",
+            "name": "Filter Texts",
+            "description": "Filter layer selection by Texts",
+            "icon":"icons/text-icon.png",
             "identifier": "filtertextlayers",
             "handlers" : {
                 "run" : "filterTexts"
@@ -40,9 +40,9 @@
             "script": "query-selection.js"
         },
         {
-            "description": "Filter by Group Layers",
-            "icon":"icons/data-icon.png",
-            "name": "Filter Groups Layers",
+            "name": "Filter Groups",
+            "description": "Filter layers selection by Groups",
+            "icon":"icons/group-icon.png",
             "identifier": "filtergrouplayers",
             "handlers" : {
                 "run" : "filterGroups"
