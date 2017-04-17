@@ -1,5 +1,6 @@
-# sketch-query-selection
-Reselect layers by type
+# Sketch Query-selection
+Filter selection layers by type.
+Groups, Shapes, Text and Image layers.
 
 <a href="http://bit.ly/SketchRunnerWebsite">
   <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png" >
