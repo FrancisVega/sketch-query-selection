@@ -1,0 +1,54 @@
+{
+    "name": "Query Selection",
+    "description": "Query Selection",
+    "author": "Francis Vega",
+    "author": "hisconer@gmail.com",
+    "homepage": "",
+    "version": 0.1,
+    "identifier": "com.example.sketch.queryselection",
+    "compatibleVersion": "4.3",
+    "bundleVersion": 1,
+    "commands": [
+        {
+            "description": "Filter by Shape Layers",
+            "icon":"icons/data-icon.png",
+            "name": "Filter Shape Layers",
+            "identifier": "filtershapelayers",
+            "handler": "onRun",
+            "script": "filter-shape-layers.js"
+        },
+        {
+            "description": "Filter by Image Layers",
+            "icon":"icons/data-icon.png",
+            "name": "Filter Images Layers",
+            "identifier": "filterimagelayers",
+            "handler": "onRun",
+            "script": "filter-image-layers.js"
+        },
+        {
+            "description": "Filter by Text Layers",
+            "icon":"icons/data-icon.png",
+            "name": "Filter Texts Layers",
+            "identifier": "filtertextlayers",
+            "handler": "onRun",
+            "script": "filter-text-layers.js"
+        },
+        {
+            "description": "Filter by Group Layers",
+            "icon":"icons/data-icon.png",
+            "name": "Filter Groups Layers",
+            "identifier": "filtergrouplayers",
+            "handler": "onRun",
+            "script": "filter-group-layers.js"
+        }
+    ],
+    "menu": {
+        "title": "Query Selection",
+        "items": [
+            "filtershapelayers",
+            "filterimagelayers",
+            "filtertextlayers",
+            "filtergrouplayers"
+        ]
+    }
+}
