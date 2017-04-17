@@ -14,32 +14,40 @@
             "icon":"icons/data-icon.png",
             "name": "Filter Shape Layers",
             "identifier": "filtershapelayers",
-            "handler": "onRun",
-            "script": "filter-shape-layers.js"
+            "handlers" : {
+                "run" : "filterShapes"
+            },
+            "script": "query-selection.js"
         },
         {
             "description": "Filter by Image Layers",
             "icon":"icons/data-icon.png",
             "name": "Filter Images Layers",
             "identifier": "filterimagelayers",
-            "handler": "onRun",
-            "script": "filter-image-layers.js"
+            "handlers" : {
+                "run" : "filterImages"
+            },
+            "script": "query-selection.js"
         },
         {
             "description": "Filter by Text Layers",
             "icon":"icons/data-icon.png",
             "name": "Filter Texts Layers",
             "identifier": "filtertextlayers",
-            "handler": "onRun",
-            "script": "filter-text-layers.js"
+            "handlers" : {
+                "run" : "filterTexts"
+            },
+            "script": "query-selection.js"
         },
         {
             "description": "Filter by Group Layers",
             "icon":"icons/data-icon.png",
             "name": "Filter Groups Layers",
             "identifier": "filtergrouplayers",
-            "handler": "onRun",
-            "script": "filter-group-layers.js"
+            "handlers" : {
+                "run" : "filterGroups"
+            },
+            "script": "query-selection.js"
         }
     ],
     "menu": {
@@ -52,3 +60,4 @@
         ]
     }
 }
+
