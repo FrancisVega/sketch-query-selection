@@ -2,6 +2,8 @@
 Filter selection layers by type.
 Groups, Shapes, Text and Image layers.
 
+![queryselection](https://raw.githubusercontent.com/FrancisVega/sketch-query-selection/master/query-selection.sketchplugin/Contents/Resources/query-selection--demo.gif)
+
 <a href="http://bit.ly/SketchRunnerWebsite">
   <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png" >
 </a>
