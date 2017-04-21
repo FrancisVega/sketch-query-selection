@@ -8,4 +8,8 @@ Groups, Shapes, Text and Image layers.
 
 
 ## Install
-Download and double click in query-selection.sketchplugin
+
+[![Install PLUGIN NAME with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install PLUGIN NAME with Sketchpacks")](https://sketchpacks.com/YOUR_NAME/PLUGIN_NAME/install)
+
+Or download and double click in query-selection.sketchplugin
+
