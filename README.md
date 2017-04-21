@@ -9,7 +9,7 @@ Groups, Shapes, Text and Image layers.
 
 ## Install
 
-[![Install PLUGIN NAME with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install PLUGIN NAME with Sketchpacks")](https://sketchpacks.com/YOUR_NAME/PLUGIN_NAME/install)
+[![Install Sketch Query Selection with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install Sketch Query Selection with Sketchpacks")](https://sketchpacks.com/FrancisVega/sketch-query-selection/install)
 
 Or download and double click in query-selection.sketchplugin
 
