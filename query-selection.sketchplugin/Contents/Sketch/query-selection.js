@@ -53,12 +53,32 @@ const isGroup = layer =>
   layer.class() == "MSLayerGroup";
 
 /**
+ * Return true if the layer is a Artboard
+ * @param {object} layer - Layer object
+ * @returns {boolean}
+ */
+const isArtboard = layer =>
+  layer.class() == "MSArtboardGroup";
+
+/**
  * Filter Shape Layers
  * @param {object} context - Sketch Context
  */
 function filterShapes (context) {
-  deselectLayers(context);
-  selectLayers(selectedLayers(context).filter(isShape));
+  try {
+    const sel = context.selection;
+    const firstLayer = sel[0];
+    if (isArtboard(firstLayer)) {
+      const all = firstLayer.children();
+      const shapes = all.slice().filter(isShape);
+      selectLayers(shapes);
+    } else {
+      deselectLayers(context);
+      selectLayers(selectedLayers(context).filter(isShape));
+    }
+  } catch (e) {
+    log(e);
+  }
 }
 
 /**
@@ -66,8 +86,20 @@ function filterShapes (context) {
  * @param {object} context - Sketch Context
  */
 function filterGroups (context) {
-  deselectLayers(context);
-  selectLayers(selectedLayers(context).filter(isGroup));
+  try {
+    const sel = context.selection;
+    const firstLayer = sel[0];
+    if (isArtboard(firstLayer)) {
+      const all = firstLayer.children();
+      const groups = all.slice().filter(isGroup);
+      selectLayers(groups);
+    } else {
+      deselectLayers(context);
+      selectLayers(selectedLayers(context).filter(isGroup));
+    }
+  } catch (e) {
+    log(e);
+  }
 }
 
 /**
@@ -75,8 +107,20 @@ function filterGroups (context) {
  * @param {object} context - Sketch Context
  */
 function filterImages (context) {
-  deselectLayers(context);
-  selectLayers(selectedLayers(context).filter(isImage));
+  try {
+    const sel = context.selection;
+    const firstLayer = sel[0];
+    if (isArtboard(firstLayer)) {
+      const all = firstLayer.children();
+      const imagelayers = all.slice().filter(isImage);
+      selectLayers(imagelayers);
+    } else {
+      deselectLayers(context);
+      selectLayers(selectedLayers(context).filter(isImage));
+    }
+  } catch (e) {
+    log(e);
+  }
 }
 
 /**
@@ -84,6 +128,18 @@ function filterImages (context) {
  * @param {object} context - Sketch Context
  */
 function filterTexts (context) {
-  deselectLayers(context);
-  selectLayers(selectedLayers(context).filter(isText));
+  try {
+    const sel = context.selection;
+    const firstLayer = sel[0];
+    if (isArtboard(firstLayer)) {
+      const all = firstLayer.children();
+      const textLayers = all.slice().filter(isText);
+      selectLayers(textLayers);
+    } else {
+      deselectLayers(context);
+      selectLayers(selectedLayers(context).filter(isText));
+    }
+  } catch (e) {
+    log(e);
+  }
 }
