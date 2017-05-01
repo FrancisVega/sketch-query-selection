@@ -4,10 +4,10 @@
     "author": "Francis Vega",
     "author": "hisconer@gmail.com",
     "homepage": "",
-    "version": 0.2,
+    "version": 0.3,
     "identifier": "com.example.sketch.queryselection",
     "compatibleVersion": "4.3",
-    "bundleVersion": 1,
+    "bundleVersion": 2,
     "commands": [
         {
             "name": "Filter Shapes",
